@@ -1,1 +1,7 @@
 RATreeView-master
+Debug
+bin
+obj
+*mdb
+.DSStore
+*.userprefs
