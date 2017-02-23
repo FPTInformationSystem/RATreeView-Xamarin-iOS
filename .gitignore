@@ -5,3 +5,9 @@ obj
 *mdb
 .DSStore
 *.userprefs
+xcuserdata
+profile
+*.xcworkspace
+*.pbxuser
+build
+output
