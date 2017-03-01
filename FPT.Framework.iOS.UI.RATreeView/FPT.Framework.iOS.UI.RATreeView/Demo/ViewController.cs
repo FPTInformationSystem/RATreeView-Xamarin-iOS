@@ -124,7 +124,7 @@ namespace Demo
 				var detailsText = string.Format("Number of children {0}", i.Children.Count);
 				var expanded = treeView.IsCellForItemExpanded(i);
 				cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-				cell.Setup(level + "-" + i.Name, detailsText, level, !expanded);
+				cell.Setup(i.Name, detailsText, level, !expanded);
 				cell.AdditionButtonActionBlock = (_) =>
 				{
 					var newItem = new DataObject(name: "Added value");
