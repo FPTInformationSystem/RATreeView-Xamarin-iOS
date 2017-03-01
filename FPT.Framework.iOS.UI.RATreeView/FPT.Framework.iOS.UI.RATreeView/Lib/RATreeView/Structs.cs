@@ -1,7 +1,7 @@
 ﻿using System;
 using UIKit;
 
-namespace RATreeView
+namespace FPT.Framework.iOS.UI.RATreeView
 {
 	public enum RATreeViewStyle : uint
 	{

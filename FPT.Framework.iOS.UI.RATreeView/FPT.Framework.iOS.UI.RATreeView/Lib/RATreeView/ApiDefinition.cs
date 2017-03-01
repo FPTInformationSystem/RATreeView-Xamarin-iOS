@@ -4,7 +4,7 @@ using Foundation;
 using ObjCRuntime;
 using UIKit;
 
-namespace RATreeView
+namespace FPT.Framework.iOS.UI.RATreeView
 {
 	// @protocol RATreeViewDataSource <NSObject>
 	[Protocol, Model]
@@ -14,7 +14,7 @@ namespace RATreeView
 		// @required -(NSInteger)treeView:(RATreeView * _Nonnull)treeView numberOfChildrenOfItem:(id _Nullable)item;
 		[Abstract]
 		[Export("treeView:numberOfChildrenOfItem:")]
-		nint TreeView(RATreeView treeView, [NullAllowed] NSObject item);
+		nint NumberOfChildrenOfItem(RATreeView treeView, [NullAllowed] NSObject item);
 
 		// @required -(UITableViewCell * _Nonnull)treeView:(RATreeView * _Nonnull)treeView cellForItem:(id _Nullable)item;
 		[Abstract]
@@ -24,7 +24,7 @@ namespace RATreeView
 		// @required -(id _Nonnull)treeView:(RATreeView * _Nonnull)treeView child:(NSInteger)index ofItem:(id _Nullable)item;
 		[Abstract]
 		[Export("treeView:child:ofItem:")]
-		NSObject TreeView(RATreeView treeView, nint index, [NullAllowed] NSObject item);
+		NSObject GetChildItemAtIndexOfItem(RATreeView treeView, nint index, [NullAllowed] NSObject item);
 
 		// @optional -(void)treeView:(RATreeView * _Nonnull)treeView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowForItem:(id _Nonnull)item;
 		[Export("treeView:commitEditingStyle:forRowForItem:")]
