@@ -7,4 +7,4 @@
 
 using ObjCRuntime;
 
-[assembly: LinkWith ("RATreeView-universal.a", SmartLink = true, ForceLoad = true)]
+[assembly: LinkWith ("RATreeView-universal.a", SmartLink = false, ForceLoad = true)]
